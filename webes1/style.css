@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'lastninja';
+    src: url('lastninja.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --bor: 0;
+}
+
+body {
+    color: aliceblue;
+    z-index: -5;
+    background-image: url("bg.jpg");
+    border-radius: 100px;
+}
+
+html{
+  text-align: center;
+  height: 100vh;
+}
+
+img
+{
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  transition: all 0.5s ease;
+  border: solid 5px;
+  border-radius: 70px;
+}
+
+img:hover
+{
+  border-color: hsl(202, 97%, 49%);
+  cursor: pointer;
+}
+
+span{
+  display: inline;
+  padding: 20px;
+}
+
+p{
+  display: inline;
+  font-family: 'lastninja';
+  padding: 20px;
+}
+
+div
+{
+  margin: 30px auto;
+}
+
+
+.figures
+{
+display: inline;
+}
+
+.score
+{
+  border: solid;
+  width: 400px;
+}
+
+.icons
+{
+  margin-top: -20px;
+
+}
+
+.ico
+{
+  width: 40px;
+  height: auto;
+  border: 0;
+  margin: 0px 20px 0px   20px;
+}
+
+.ico:hover
+{
+  background-color: pink;
+  cursor:auto;
+}
+.chooses
+{
+  margin: -30px;
+}
+
+.choos
+{
+  width: 40px;
+  height: auto;
+  border: var(--bor);
+  border-radius: 5px;
+  margin: 0 10px 0 20px;
+}
+
+.choos:hover
+{
+  background-color: pink;
+  cursor:auto;
+  border-color: black;
+}
+
+.answer
+{
+  display: none;
+  margin: -10px auto;
+  width: 600px;
+  text-align: center;
+}
+
+
+#masage
+{
+  color: black;
+}
