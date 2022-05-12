@@ -1,0 +1,30 @@
+body {
+    color: aliceblue;
+    background-image: url("bg.jpg");
+    padding: 25px;;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+    border-color: aliceblue;
+}
+
+th, td {
+    color: aliceblue;
+    padding: 15px;
+    text-align: left;
+    background-color: black;
+}
+
+p {
+     margin-bottom: 50px;
+}
+
+.box {
+    border: 2px solid aliceblue;
+    padding: 15px;
+    background-color: #606060;
+    border-radius: 15px;
+}
