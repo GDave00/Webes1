@@ -1,0 +1,66 @@
+body {
+  color: aliceblue;
+  background-image: url("hatter.jpg");
+  padding: 25px;
+}
+
+.anag {
+  letter-spacing: 6px;
+  text-shadow: red 0 0, cyan 0 0;
+  transition: text-shadow 200ms;
+}
+
+.anag:hover {
+  text-shadow: red -6px 0, cyan 6px 0;
+}
+
+
+input:invalid {
+  animation: shake 300ms;
+}
+@keyframes shake {
+  25% { transform: translateX(4px); }
+  50% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.styled table {
+  width: 60%;
+  border-collapse: collapse;
+  text-align: center;
+  border-color: aliceblue;
+  color: white;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+.box {
+  color: aliceblue;
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  isolation: isolate;
+}
+.box::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: linear-gradient(
+    to bottom right,
+    transparent,
+    rgba(255, 255, 255, 0.5)
+  );
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: inherit;
+  backdrop-filter: blur(0.25rem);
+  box-shadow: 0 2px 0 1px rgba(255, 255, 255, 0.75);
+  z-index: -1;
+}
